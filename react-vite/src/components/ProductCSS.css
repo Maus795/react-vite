@@ -41,3 +41,74 @@ width: 400px;
 border: none;
 cursor: pointer;
 }
+.ModalFon{
+    
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    opacity: 0.7;
+top: 0;
+left: 0;}
+.ModalForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+    top: 100px;
+    position: absolute;
+    background: white;
+    border-radius: 3px;
+}
+
+.ModalInput{
+border: 1px solid #00000061;
+height: 30px;
+width: 99%;
+align-self: center;
+border-radius: 4px;
+outline: none;
+}
+.ModalBtn{
+ background: rgb(255, 183, 0);
+ height: 30px;
+ width: 80px;
+ border: none;
+ cursor: pointer;
+
+}
+.ModalBtn:hover{color: aliceblue;}
+.FlexForm{
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.ModalName{ align-self: center;}
+.Search{
+    position: fixed;
+    background-color: red;
+    height: 6%;
+    width: 3.5%;
+    border-radius: 90%;
+    border: none;
+    cursor: pointer;
+    color: rgb(17, 239, 239);
+left: 95%;
+font-size: 40px;
+top:90%
+}
+.Navig{display: flex;
+    flex-direction: row;
+    background-color: #2525252a;
+    height:50px ;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(201, 141, 31);
+    font-size: 20px;
+    text-decoration: none;
+}
+:Link{
+    color: rgb(201, 141, 31);
+    text-decoration:none ;
+    margin-left: 10px;
+}
