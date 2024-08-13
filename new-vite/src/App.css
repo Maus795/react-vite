@@ -1,0 +1,6 @@
+.Start{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  flex-direction: column;
+}

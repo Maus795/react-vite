@@ -1,0 +1,235 @@
+
+#root{display: flex;
+flex-direction: row;
+gap: 10px;
+}
+.Start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 100vh;
+  
+  }
+.Position{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+cursor: pointer;
+  border: 1px solid black;
+  justify-content: center;
+  text-align: center;
+  border-radius: 3px;
+  border-color: rgb(37, 152, 45);
+}
+.imgProduct{
+  width: 200px;
+  
+  
+}
+.titleProduct{
+font-weight: bolder;}
+.btnDescrTwo{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(199, 199, 102);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+.btnDescrOne{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(98, 98, 185);
+  border: none;
+cursor: pointer;
+}
+.btnDescrOne:hover{color: aliceblue;}
+.btnDescrTwo:hover{color: aliceblue;}
+.ModalFon{
+  display: flex;
+  height:100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+.ModalForm{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 30%;
+  width: 30%;
+  justify-content: center;
+  background-color: aliceblue;
+  align-items: center;
+  border-radius: 10px;
+}
+.inputModal{
+  width: 95%;
+  height: 25%;
+  border-radius: 4px;
+  border: none;
+ 
+  
+}
+.btnModal{
+  height:25px;
+  width: 80px;
+  color:gray;
+  background-color: yellow;
+  border-radius: 4px;
+  border: none;}
+  .btnModal:hover{
+    color: green;
+  }
+
+.Modal{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+}
+.closeModal{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 80px;
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  cursor: pointer;
+  font-size: 40px;
+  color: blueviolet;
+
+}
+.closeModal:hover{
+  color: blue;
+}
+.closeModalUp{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 80px;
+  position: relative;
+  
+  top: 90%;
+  cursor: pointer;
+  font-size: 40px;
+  color: blueviolet;
+}
+.closeModalUp:hover{color: blue;}
+.closeModalDown{width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 80px;
+  position: relative;
+  right: 95;
+  top: 90%;
+  cursor: pointer;
+  font-size: 40px;
+  color: blueviolet;
+  
+}
+.closeModalDown:hover{color: blue;}
+.WindowCount{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top:85%;
+  color: blueviolet;
+  align-items: center;
+  align-content:space-between;
+  
+  
+
+  
+ 
+}
+.Count{position: relative;
+  font-size: 40px;
+  
+
+}
+.error{
+  position: absolute;
+  color: red;
+}
+.ErrorMassage{
+color: red;
+}
+.clickMenu{
+  height: 30px;
+  width: 30px;
+  opacity: 0.7;
+}
+.blockMenu{
+  height: 50vh;
+  display: flex;
+width: 250px; 
+  transition: all 2s ease 0s ;  
+  overflow: auto;
+  background-color:rgb(224, 224, 216);
+  flex-direction: column;
+  border-radius: 10px;
+  overflow-x: hidden;
+ }
+.blockMenu.active {
+  width: 0px; 
+display: flex;
+overflow: hidden;
+background-color:beige;
+align-items: center;
+
+
+}
+.ulMenu{
+  display: flex;
+  /* background-color: brown; */
+  flex-direction: column;
+  justify-content: space-around;
+height: 100%;
+
+list-style-type: none;
+align-content: center;
+font-size: 25px;
+
+ 
+}
+li{cursor: pointer;}
+li:hover{
+  color: rgb(147, 82, 82);
+}
+.clickDescr{
+  display: flex;
+  width:200% ;
+  background-color: rgb(191, 201, 201);
+  border-radius: 10px;
+  cursor:auto;
+  margin-top: 10px;
+  position:relative;
+  box-shadow: 2px 2px 2px ;
+  flex-direction: column;
+  border: none;
+}
+.clickDescr:hover{
+  color: black;
+}
+.titleDescr{
+color: rgb(75, 149, 64);
+font-size: 15px;
+}
+header{
+  display: flex;
+  
+}
