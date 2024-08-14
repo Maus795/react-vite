@@ -1,6 +1,7 @@
 
+
 #root{display: flex;
-flex-direction: row;
+flex-direction: column;
 gap: 10px;
 }
 .Start{
@@ -10,7 +11,7 @@ gap: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1;
-    height: 100vh;
+    /* height: 100vh; */
   
   }
 .Position{
@@ -56,10 +57,13 @@ cursor: pointer;
   display: flex;
   height:100%;
   width: 100%;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
   justify-content: center;
   align-items: center;
+  top:0;
+  right: 0;
+z-index: 1;
 }
 .ModalForm{
   display: flex;
@@ -89,6 +93,7 @@ cursor: pointer;
   border: none;}
   .btnModal:hover{
     color: green;
+    
   }
 
 .Modal{
@@ -105,12 +110,13 @@ cursor: pointer;
   height: 50px;
   border: 1px solid black;
   border-radius: 80px;
-  position: fixed;
+  position: absolute;
   left: 95%;
   top: 90%;
   cursor: pointer;
   font-size: 40px;
   color: blueviolet;
+  z-index: 2;
 
 }
 .closeModal:hover{
@@ -176,13 +182,14 @@ color: red;
 .blockMenu{
   height: 50vh;
   display: flex;
-width: 250px; 
+width: 240px; 
   transition: all 2s ease 0s ;  
   overflow: auto;
   background-color:rgb(224, 224, 216);
   flex-direction: column;
   border-radius: 10px;
   overflow-x: hidden;
+  
  }
 .blockMenu.active {
   width: 0px; 
@@ -195,7 +202,6 @@ align-items: center;
 }
 .ulMenu{
   display: flex;
-  /* background-color: brown; */
   flex-direction: column;
   justify-content: space-around;
 height: 100%;
@@ -206,8 +212,10 @@ font-size: 25px;
 
  
 }
-li{cursor: pointer;}
-li:hover{
+.styleLiMenu{cursor: pointer;text-decoration: none;
+color: rgba(80, 148, 194, 0.712);
+}
+.styleLiMenu:hover{
   color: rgb(147, 82, 82);
 }
 .clickDescr{
@@ -231,5 +239,40 @@ font-size: 15px;
 }
 header{
   display: flex;
+width: 100%;
+height: 100px;
+
+position: sticky;
+top:0px;
+left: 0px;
+background: linear-gradient(30deg,red,green);
+opacity: 0.5;
+flex-direction: row;
+justify-content:space-evenly;
+align-items:center;
+list-style-type: none;
+font-size: 20px;
+border-radius: 10px;
+
+}
+.common{
+flex-direction: row;
+display: flex;
+}
+.styleHeader{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
   
+  
+}
+.styleLiHeader{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  
+}
+.styleLiHeader:hover{
+  color: blueviolet;
 }

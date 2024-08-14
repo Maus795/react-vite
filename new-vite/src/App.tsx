@@ -1,34 +1,20 @@
-
-import { Product } from "./hooks/Products"
-import { useProduct } from "./hooks/hookProducts"
-import { Button } from "./components/btnModal"
-import { Loader } from "./components/Loader"
-import { ErrorMaseges } from "./components/ErrorMasges"
-import { Modal } from "./components/modal"
-import { CreateProduct } from "./components/CreateProduct"
-import { useState } from "react"
-import { IProduct } from "./model"
-import { Menu } from "./components/menu/menu"
+import { Routes, Route } from "react-router-dom"
+import { HomePage } from "./pages/HomePage"
+import { Basket } from "./pages/basket"
+import { Call } from "./pages/call"
+import { Purchases } from "./pages/purchases"
+import { Profile } from "./pages/Profile"
 function App() {
-  const [modal, setModal] = useState(true)
-  const { loading, error, products, addProduct } = useProduct()
-  const CreateHandler = (products: IProduct) => {
-    setModal(false)
-    addProduct(products)
-  }
-
   return (
-    <> <Menu></Menu>
-      <div className="Start">
-        {loading && <Loader />}
-        {error && <ErrorMaseges error={error} />}
-        <Button />
-        {products.map(product => <Product products={product} key={product.id} />)}
-        {modal && <Modal title="Create new product" > <CreateProduct onCreate={CreateHandler} /></Modal>}
-        <button className="closeModal" type="submit"
-          onClick={() => setModal(prev => !prev)}>+</button>
-      </div>
-    </>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/call" element={<Call />} />
+        <Route path="/purchases" element={<Purchases />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/profile" element={<Profile />} />
+
+      </Routes></>
   )
 
 }
