@@ -14,6 +14,7 @@ gap: 10px;
     /* height: 100vh; */
   
   }
+  
 .Position{
   display: flex;
   flex-direction: column;
@@ -27,11 +28,13 @@ cursor: pointer;
   border-radius: 3px;
   border-color: rgb(37, 152, 45);
 }
+
 .imgProduct{
   width: 200px;
   
   
-}
+}.imgProduct:hover{scale: 1.3;
+border-radius: 10px;}
 .titleProduct{
 font-weight: bolder;}
 .btnDescrTwo{
@@ -175,29 +178,40 @@ z-index: 1;
 color: red;
 }
 .clickMenu{
+  
+  position: absolute;
   height: 30px;
-  width: 30px;
+  width: 40px;
   opacity: 0.7;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(222, 222, 119);
 }
+.clickMenu:hover{border: none;
+  background:linear-gradient(45deg,red,gray);}
 .blockMenu{
   height: 50vh;
   display: flex;
-width: 240px; 
+  width: 240px; 
   transition: all 2s ease 0s ;  
   overflow: auto;
   background-color:rgb(224, 224, 216);
   flex-direction: column;
   border-radius: 10px;
   overflow-x: hidden;
-  
+  padding-left: 15px;
+ 
  }
 .blockMenu.active {
-  width: 0px; 
-display: flex;
+  width: 25px; 
+/* display: flex; */
 overflow: hidden;
 background-color:beige;
-align-items: center;
 
+}
+.icon{position: absolute;
+  left:0 ;
+  padding-left: 15px;
 
 }
 .ulMenu{
@@ -207,12 +221,15 @@ align-items: center;
 height: 100%;
 
 list-style-type: none;
-align-content: center;
+
 font-size: 25px;
 
  
 }
-.styleLiMenu{cursor: pointer;text-decoration: none;
+.styleLiMenu{cursor: pointer;
+  text-decoration: none;
+display: flex;
+gap: 10px;
 color: rgba(80, 148, 194, 0.712);
 }
 .styleLiMenu:hover{
@@ -271,8 +288,36 @@ display: flex;
 .styleLiHeader{
   color: rgb(0, 0, 0);
   cursor: pointer;
-  
+  text-decoration: none;
 }
 .styleLiHeader:hover{
   color: blueviolet;
+}
+.entrance{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap:20px;
+  align-items: center;
+  
+
+}
+.fieldsAuthorization{
+  display: flex;
+  border: 3px solid rgba(13, 117, 177, 0.613);
+  box-shadow:  2px 1px 5px 5px rgba(255, 0, 0, 0.753);
+  flex-direction: column;
+  width: 60%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 10px;
+
+}
+.inpAuth{
+  display: flex;
+  width: 50%;
+  height: 25px;
+  
 }

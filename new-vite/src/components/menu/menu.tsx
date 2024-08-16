@@ -12,10 +12,10 @@ export function Menu() {
             {<button className="clickMenu" onClick={() => setMenu(!menu)}>王</button>}
             {<nav className={`blockMenu ${menu ? "active" : ""}`}>
                 <ul className="ulMenu">
-                    <Link to="/profile" className="styleLiMenu"><VscAccount />Профиль</Link>
-                    <Link to="/purchases" className="styleLiMenu"><MdProductionQuantityLimits />Продукты</Link>
-                    <Link to="/basket" className="styleLiMenu"><SlBasketLoaded />Корзина</Link>
-                    <Link to="/call" className="styleLiMenu"><IoCallOutline />Контакты</Link>
+                    <Link to="/profile" className="styleLiMenu"><VscAccount className="icon" /><span>Профиль</span></Link>
+                    <Link to="/purchases" className="styleLiMenu"><MdProductionQuantityLimits className="icon" /><span>Продукты</span></Link>
+                    <Link to="/basket" className="styleLiMenu"><SlBasketLoaded className="icon" /><span>Корзина</span></Link>
+                    <Link to="/call" className="styleLiMenu"><IoCallOutline className="icon" /><span>Контакты</span></Link>
 
                 </ul>
             </nav>}

@@ -10,7 +10,7 @@ import { IProduct } from "../model"
 import { Menu } from "../components/menu/menu"
 import { Header } from "../components/menu/header"
 export function HomePage() {
-    const [modal, setModal] = useState(true)
+    const [modal, setModal] = useState(false)
     const { loading, error, products, addProduct } = useProduct()
     const CreateHandler = (products: IProduct) => {
         setModal(false)
