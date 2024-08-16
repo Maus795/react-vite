@@ -1,27 +1,25 @@
-
-
-#root{display: flex;
-flex-direction: column;
-gap: 10px;
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.Start{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1;
-    /* height: 100vh; */
-  
-  }
-  
-.Position{
+.Start {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  /* height: 100vh; */
+}
+
+.Position {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 500px;
   width: 300px;
-cursor: pointer;
+  cursor: pointer;
   border: 1px solid black;
   justify-content: center;
   text-align: center;
@@ -29,46 +27,51 @@ cursor: pointer;
   border-color: rgb(37, 152, 45);
 }
 
-.imgProduct{
+.imgProduct {
   width: 200px;
-  
-  
-}.imgProduct:hover{scale: 1.3;
-border-radius: 10px;}
-.titleProduct{
-font-weight: bolder;}
-.btnDescrTwo{
+}
+.imgProduct:hover {
+  scale: 1.3;
+  border-radius: 10px;
+}
+.titleProduct {
+  font-weight: bolder;
+}
+.btnDescrTwo {
   width: 100px;
   height: 30px;
   background-color: rgb(199, 199, 102);
   border: none;
   cursor: pointer;
   border-radius: 10px;
-
 }
-.btnDescrOne{
+.btnDescrOne {
   width: 100px;
   height: 30px;
   border-radius: 10px;
   background-color: rgb(98, 98, 185);
   border: none;
-cursor: pointer;
+  cursor: pointer;
 }
-.btnDescrOne:hover{color: aliceblue;}
-.btnDescrTwo:hover{color: aliceblue;}
-.ModalFon{
+.btnDescrOne:hover {
+  color: aliceblue;
+}
+.btnDescrTwo:hover {
+  color: aliceblue;
+}
+.ModalFon {
   display: flex;
-  height:100%;
+  height: 100%;
   width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
-  top:0;
+  top: 0;
   right: 0;
-z-index: 1;
+  z-index: 1;
 }
-.ModalForm{
+.ModalForm {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -79,36 +82,33 @@ z-index: 1;
   align-items: center;
   border-radius: 10px;
 }
-.inputModal{
+.inputModal {
   width: 95%;
   height: 25%;
   border-radius: 4px;
   border: none;
- 
-  
 }
-.btnModal{
-  height:25px;
+.btnModal {
+  height: 25px;
   width: 80px;
-  color:gray;
+  color: gray;
   background-color: yellow;
   border-radius: 4px;
-  border: none;}
-  .btnModal:hover{
-    color: green;
-    
-  }
+  border: none;
+}
+.btnModal:hover {
+  color: green;
+}
 
-.Modal{
+.Modal {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
-
 }
-.closeModal{
+.closeModal {
   width: 50px;
   height: 50px;
   border: 1px solid black;
@@ -120,25 +120,27 @@ z-index: 1;
   font-size: 40px;
   color: blueviolet;
   z-index: 2;
-
 }
-.closeModal:hover{
+.closeModal:hover {
   color: blue;
 }
-.closeModalUp{
+.closeModalUp {
   width: 50px;
   height: 50px;
   border: 1px solid black;
   border-radius: 80px;
   position: relative;
-  
+
   top: 90%;
   cursor: pointer;
   font-size: 40px;
   color: blueviolet;
 }
-.closeModalUp:hover{color: blue;}
-.closeModalDown{width: 50px;
+.closeModalUp:hover {
+  color: blue;
+}
+.closeModalDown {
+  width: 50px;
   height: 50px;
   border: 1px solid black;
   border-radius: 80px;
@@ -148,37 +150,31 @@ z-index: 1;
   cursor: pointer;
   font-size: 40px;
   color: blueviolet;
-  
 }
-.closeModalDown:hover{color: blue;}
-.WindowCount{
+.closeModalDown:hover {
+  color: blue;
+}
+.WindowCount {
   display: flex;
   flex-direction: row;
   position: fixed;
-  top:85%;
+  top: 85%;
   color: blueviolet;
   align-items: center;
-  align-content:space-between;
-  
-  
-
-  
- 
+  align-content: space-between;
 }
-.Count{position: relative;
+.Count {
+  position: relative;
   font-size: 40px;
-  
-
 }
-.error{
+.error {
   position: absolute;
   color: red;
 }
-.ErrorMassage{
-color: red;
+.ErrorMassage {
+  color: red;
 }
-.clickMenu{
-  
+.clickMenu {
   position: absolute;
   height: 30px;
   width: 40px;
@@ -187,125 +183,119 @@ color: red;
   border: none;
   background-color: rgb(222, 222, 119);
 }
-.clickMenu:hover{border: none;
-  background:linear-gradient(45deg,red,gray);}
-.blockMenu{
+.clickMenu:hover {
+  border: none;
+  background: linear-gradient(45deg, red, gray);
+}
+.blockMenu {
   height: 50vh;
   display: flex;
-  width: 240px; 
-  transition: all 2s ease 0s ;  
+  width: 240px;
+  transition: all 2s ease 0s;
   overflow: auto;
-  background-color:rgb(224, 224, 216);
+  background-color: rgb(224, 224, 216);
   flex-direction: column;
   border-radius: 10px;
   overflow-x: hidden;
   padding-left: 15px;
- 
- }
+}
 .blockMenu.active {
-  width: 25px; 
-/* display: flex; */
-overflow: hidden;
-background-color:beige;
-
+  width: 25px;
+  /* display: flex; */
+  overflow: hidden;
+  background-color: beige;
 }
-.icon{position: absolute;
-  left:0 ;
+.icon {
+  position: absolute;
+  left: 0;
   padding-left: 15px;
-
 }
-.ulMenu{
+.ulMenu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-height: 100%;
+  height: 100%;
 
-list-style-type: none;
+  list-style-type: none;
 
-font-size: 25px;
-
- 
+  font-size: 25px;
 }
-.styleLiMenu{cursor: pointer;
+.styleLiMenu {
+  cursor: pointer;
   text-decoration: none;
-display: flex;
-gap: 10px;
-color: rgba(80, 148, 194, 0.712);
+  display: flex;
+  gap: 10px;
+  color: rgba(80, 148, 194, 0.712);
 }
-.styleLiMenu:hover{
+.styleLiMenu:hover {
   color: rgb(147, 82, 82);
 }
-.clickDescr{
+.clickDescr {
   display: flex;
-  width:200% ;
+  width: 200%;
   background-color: rgb(191, 201, 201);
   border-radius: 10px;
-  cursor:auto;
+  cursor: auto;
   margin-top: 10px;
-  position:relative;
-  box-shadow: 2px 2px 2px ;
+  position: relative;
+  box-shadow: 2px 2px 2px;
   flex-direction: column;
   border: none;
 }
-.clickDescr:hover{
+.clickDescr:hover {
   color: black;
 }
-.titleDescr{
-color: rgb(75, 149, 64);
-font-size: 15px;
+.titleDescr {
+  color: rgb(75, 149, 64);
+  font-size: 15px;
 }
-header{
+header {
   display: flex;
-width: 100%;
-height: 100px;
+  width: 100%;
+  height: 100px;
 
-position: sticky;
-top:0px;
-left: 0px;
-background: linear-gradient(30deg,red,green);
-opacity: 0.5;
-flex-direction: row;
-justify-content:space-evenly;
-align-items:center;
-list-style-type: none;
-font-size: 20px;
-border-radius: 10px;
-
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(30deg, red, green);
+  opacity: 0.5;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+  border-radius: 10px;
 }
-.common{
-flex-direction: row;
-display: flex;
+.common {
+  flex-direction: row;
+  display: flex;
 }
-.styleHeader{
+.styleHeader {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   justify-items: center;
-  
-  
 }
-.styleLiHeader{
+.styleLiHeader {
   color: rgb(0, 0, 0);
   cursor: pointer;
   text-decoration: none;
 }
-.styleLiHeader:hover{
+.styleLiHeader:hover {
   color: blueviolet;
 }
-.entrance{
+.entrance {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  gap:20px;
+  gap: 20px;
   align-items: center;
-  
-
 }
-.fieldsAuthorization{
+.fieldsAuthorization {
   display: flex;
   border: 3px solid rgba(13, 117, 177, 0.613);
-  box-shadow:  2px 1px 5px 5px rgba(255, 0, 0, 0.753);
+  box-shadow: 2px 1px 5px 5px rgba(255, 0, 0, 0.753);
   flex-direction: column;
   width: 60%;
   height: 40%;
@@ -313,11 +303,9 @@ display: flex;
   align-items: center;
   gap: 5px;
   border-radius: 10px;
-
 }
-.inpAuth{
+.inpAuth {
   display: flex;
   width: 50%;
   height: 25px;
-  
 }

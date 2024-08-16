@@ -1,8 +1,6 @@
 interface ErrorMasegesProps {
-    error: string
+  error: string;
 }
 export function ErrorMaseges({ error }: ErrorMasegesProps) {
-
-
-    return (<p className="ErrorMassage">{error}</p>)
+  return <p className="ErrorMassage">{error}</p>;
 }
