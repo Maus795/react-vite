@@ -1,0 +1,6 @@
+.Window{
+display: flex;
+flex-direction: column;
+width: 70%;
+border: 1px solid black;
+}

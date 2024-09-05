@@ -1,10 +1,10 @@
+import { Header } from "../components/menu/header";
 export function Call() {
-  return (
+  return (<>   <Header />
     <div>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut corrupti
-      eaque quod voluptatibus, voluptatem adipisci reprehenderit aliquid nihil.
-      Pariatur odit voluptate quae eum quis doloremque distinctio facilis
-      dolores quibusdam quas?
+      Контакты
     </div>
+  </>
+
   );
 }

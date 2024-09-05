@@ -1,0 +1,29 @@
+.StartCat{
+    display: flex;
+    justify-content: center;
+   gap: 5px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.PosCat{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+    border: 1px solid green;
+    border-radius: 3px;
+    font-size: 20px;
+    width: 50%;
+    box-shadow: 2px 2px 2px brown;
+    cursor: pointer;
+}
+.PosCat:hover{
+    scale: 1.05;
+}
+.title{
+    color: rgba(0, 0, 0, 0.592);
+}
+.HeadCat{
+    color: rgb(49, 104, 244);
+    font-size: 25px;
+font-weight:800;}
